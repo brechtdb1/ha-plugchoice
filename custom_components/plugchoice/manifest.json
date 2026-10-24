@@ -1,0 +1,13 @@
+{
+  "domain": "plugchoice",
+  "name": "Plugchoice",
+  "codeowners": ["@brechtdb1"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/brechtdb1/ha-plugchoice",
+  "integration_type": "device",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/brechtdb1/ha-plugchoice/issues",
+  "requirements": [],
+  "version": "0.3.0"
+}

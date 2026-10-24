@@ -1,0 +1,155 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Plugchoice",
+        "description": "Maak in het Plugchoice-portaal een token aan (Settings → Personal access tokens) en plak het hier. De integratie leest standaard alleen; aansturen zet je later aan in de opties.",
+        "data": {
+          "token": "Personal access token"
+        }
+      },
+      "charger": {
+        "title": "Kies de laadpaal",
+        "data": {
+          "charger_uuid": "Laadpaal"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Nieuw Plugchoice-token",
+        "description": "Het token werd geweigerd. Maak een nieuw token aan en plak het hier.",
+        "data": {
+          "token": "Personal access token"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Token ongeldig of ingetrokken.",
+      "cannot_connect": "Geen verbinding met de Plugchoice-API."
+    },
+    "abort": {
+      "already_configured": "Deze laadpaal is al ingesteld.",
+      "no_chargers": "Er hangt geen laadpaal aan dit account.",
+      "reauth_successful": "Token bijgewerkt."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Plugchoice-opties",
+        "description": "Zet 'Aansturing toestaan' pas aan als niets anders (bv. een andere OCPP-backend) de laadpaal aanstuurt. Anders overschrijven ze elkaars laadlimiet.",
+        "data": {
+          "scan_interval": "Ophaalinterval",
+          "allow_control": "Aansturing toestaan (laadlimiet, start/stop)",
+          "id_token": "ID-token voor 'Laden starten' (optioneel)"
+        }
+      }
+    }
+  },
+  "device": {
+    "charger": {
+      "name": "Plugchoice laadpaal"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "status": {
+        "name": "Status"
+      },
+      "power": {
+        "name": "Vermogen"
+      },
+      "current_l1": {
+        "name": "Stroom L1"
+      },
+      "current_l2": {
+        "name": "Stroom L2"
+      },
+      "current_l3": {
+        "name": "Stroom L3"
+      },
+      "current_offered": {
+        "name": "Aangeboden stroom"
+      },
+      "voltage_l1": {
+        "name": "Spanning L1"
+      },
+      "voltage_l2": {
+        "name": "Spanning L2"
+      },
+      "voltage_l3": {
+        "name": "Spanning L3"
+      },
+      "temperature": {
+        "name": "Temperatuur"
+      },
+      "energy_total": {
+        "name": "Energie totaal"
+      },
+      "session_energy": {
+        "name": "Sessie energie"
+      },
+      "session_started": {
+        "name": "Sessie gestart"
+      },
+      "session_stopped": {
+        "name": "Sessie gestopt"
+      },
+      "charge_limit": {
+        "name": "Laadlimiet"
+      },
+      "max_current": {
+        "name": "Maximale stroom"
+      },
+      "last_heartbeat": {
+        "name": "Laatste heartbeat"
+      },
+      "firmware": {
+        "name": "Firmware"
+      }
+    },
+    "binary_sensor": {
+      "online": {
+        "name": "Online"
+      },
+      "car_connected": {
+        "name": "Auto aangesloten"
+      },
+      "charging": {
+        "name": "Laden"
+      }
+    },
+    "button": {
+      "start_charging": {
+        "name": "Laden starten"
+      },
+      "stop_charging": {
+        "name": "Laden stoppen"
+      }
+    },
+    "number": {
+      "set_charge_limit": {
+        "name": "Laadlimiet instellen"
+      }
+    }
+  },
+  "exceptions": {
+    "start_failed": {
+      "message": "Laden starten mislukt: {error}"
+    },
+    "start_rejected": {
+      "message": "De laadpaal antwoordde '{status}' op laden starten."
+    },
+    "stop_failed": {
+      "message": "Laden stoppen mislukt: {error}"
+    },
+    "stop_rejected": {
+      "message": "De laadpaal antwoordde '{status}' op laden stoppen."
+    },
+    "set_limit_failed": {
+      "message": "Laadlimiet niet gezet: {error}"
+    },
+    "set_limit_rejected": {
+      "message": "De laadpaal antwoordde '{status}' op een laadlimiet van {limit} A."
+    }
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Plugchoice",
+        "description": "Create a token in the Plugchoice portal (Settings → Personal access tokens) and paste it here. The integration is read-only by default; enable control later in the options.",
+        "data": {
+          "token": "Personal access token"
+        }
+      },
+      "charger": {
+        "title": "Choose the charger",
+        "data": {
+          "charger_uuid": "Charger"
+        }
+      },
+      "reauth_confirm": {
+        "title": "New Plugchoice token",
+        "description": "The token was rejected. Create a new token and paste it here.",
+        "data": {
+          "token": "Personal access token"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid or revoked token.",
+      "cannot_connect": "Cannot connect to the Plugchoice API."
+    },
+    "abort": {
+      "already_configured": "This charger is already configured.",
+      "no_chargers": "No chargers on this account.",
+      "reauth_successful": "Token updated."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Plugchoice options",
+        "description": "Only enable 'Allow control' when nothing else (e.g. another OCPP backend) controls the charger, or the two will overwrite each other's charge limits.",
+        "data": {
+          "scan_interval": "Polling interval",
+          "allow_control": "Allow control (charge limit, start/stop)",
+          "id_token": "ID token for 'Start charging' (optional)"
+        }
+      }
+    }
+  },
+  "device": {
+    "charger": {
+      "name": "Plugchoice charger"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "status": {
+        "name": "Status"
+      },
+      "power": {
+        "name": "Power"
+      },
+      "current_l1": {
+        "name": "Current L1"
+      },
+      "current_l2": {
+        "name": "Current L2"
+      },
+      "current_l3": {
+        "name": "Current L3"
+      },
+      "current_offered": {
+        "name": "Current offered"
+      },
+      "voltage_l1": {
+        "name": "Voltage L1"
+      },
+      "voltage_l2": {
+        "name": "Voltage L2"
+      },
+      "voltage_l3": {
+        "name": "Voltage L3"
+      },
+      "temperature": {
+        "name": "Temperature"
+      },
+      "energy_total": {
+        "name": "Energy total"
+      },
+      "session_energy": {
+        "name": "Session energy"
+      },
+      "session_started": {
+        "name": "Session started"
+      },
+      "session_stopped": {
+        "name": "Session stopped"
+      },
+      "charge_limit": {
+        "name": "Charge limit"
+      },
+      "max_current": {
+        "name": "Maximum current"
+      },
+      "last_heartbeat": {
+        "name": "Last heartbeat"
+      },
+      "firmware": {
+        "name": "Firmware"
+      }
+    },
+    "binary_sensor": {
+      "online": {
+        "name": "Online"
+      },
+      "car_connected": {
+        "name": "Car connected"
+      },
+      "charging": {
+        "name": "Charging"
+      }
+    },
+    "button": {
+      "start_charging": {
+        "name": "Start charging"
+      },
+      "stop_charging": {
+        "name": "Stop charging"
+      }
+    },
+    "number": {
+      "set_charge_limit": {
+        "name": "Set charge limit"
+      }
+    }
+  },
+  "exceptions": {
+    "start_failed": {
+      "message": "Could not start charging: {error}"
+    },
+    "start_rejected": {
+      "message": "The charger answered '{status}' to start charging."
+    },
+    "stop_failed": {
+      "message": "Could not stop charging: {error}"
+    },
+    "stop_rejected": {
+      "message": "The charger answered '{status}' to stop charging."
+    },
+    "set_limit_failed": {
+      "message": "Could not set the charge limit: {error}"
+    },
+    "set_limit_rejected": {
+      "message": "The charger answered '{status}' to a charge limit of {limit} A."
+    }
+  }
+}
