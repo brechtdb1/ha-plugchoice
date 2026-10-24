@@ -93,7 +93,18 @@ Entity IDs depend on the language of your Home Assistant; in English they start 
 | Set charge limit (number) | `POST …/actions/charge-limit` | **Only with *Allow control*.** 0 = pause; max = maximum current of the charger. Remembers the last value it set (the API does not always report it). |
 | Stop charging / Start charging (buttons) | `POST …/actions/stop` / `start` | **Only with *Allow control*** (start also needs the ID token) |
 
-Translations: English and Dutch.
+Translations: English and Dutch. Entity names follow the language of the Home Assistant
+server (*Settings → System → General*), not that of your user profile.
+
+### Not (yet) supported
+
+- **More than one connector**: the integration always uses connector 1.
+- **Plugchoice settings** such as load balancing, smart charging, schedules and tariffs.
+- **Session history**: only the running or last session.
+- **More than 25 chargers on one account**: only the first page is read.
+- RFID card management, reservations and firmware updates.
+
+Pull requests are welcome.
 
 ### Example: solar charging
 
