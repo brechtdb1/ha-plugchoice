@@ -137,19 +137,19 @@
       "message": "Laden starten mislukt: {error}"
     },
     "start_rejected": {
-      "message": "De laadpaal antwoordde '{status}' op laden starten."
+      "message": "De laadpaal antwoordde {status} op laden starten."
     },
     "stop_failed": {
       "message": "Laden stoppen mislukt: {error}"
     },
     "stop_rejected": {
-      "message": "De laadpaal antwoordde '{status}' op laden stoppen."
+      "message": "De laadpaal antwoordde {status} op laden stoppen."
     },
     "set_limit_failed": {
       "message": "Laadlimiet niet gezet: {error}"
     },
     "set_limit_rejected": {
-      "message": "De laadpaal antwoordde '{status}' op een laadlimiet van {limit} A."
+      "message": "De laadpaal antwoordde {status} op een laadlimiet van {limit} A."
     }
   }
 }

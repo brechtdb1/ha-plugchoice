@@ -137,19 +137,19 @@
       "message": "Could not start charging: {error}"
     },
     "start_rejected": {
-      "message": "The charger answered '{status}' to start charging."
+      "message": "The charger answered {status} to start charging."
     },
     "stop_failed": {
       "message": "Could not stop charging: {error}"
     },
     "stop_rejected": {
-      "message": "The charger answered '{status}' to stop charging."
+      "message": "The charger answered {status} to stop charging."
     },
     "set_limit_failed": {
       "message": "Could not set the charge limit: {error}"
     },
     "set_limit_rejected": {
-      "message": "The charger answered '{status}' to a charge limit of {limit} A."
+      "message": "The charger answered {status} to a charge limit of {limit} A."
     }
   }
 }
