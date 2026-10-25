@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.1 – 2026-10-25
+
+- Integration icon: a neutral Type 2 charging plug in `brand/` (shown from Home
+  Assistant 2026.3). Drawn by `tools/draw_icon.py`; replace the PNGs to change it.
+- The HACS validation now runs without exceptions.
+
 ## 0.3.0 – 2026-10-24
 
 First public release.
