@@ -1,3 +1,5 @@
+<img src="custom_components/plugchoice/brand/logo.png" alt="Plugchoice" height="64">
+
 # Plugchoice for Home Assistant
 
 [![Validate](https://github.com/brechtdb1/ha-plugchoice/actions/workflows/validate.yml/badge.svg)](https://github.com/brechtdb1/ha-plugchoice/actions/workflows/validate.yml)
@@ -6,9 +8,13 @@
 Custom integration that reads (and optionally controls) an EV charger through the
 [Plugchoice](https://www.plugchoice.com/) cloud API.
 
-> **Unofficial.** This integration is not made, endorsed or supported by Plugchoice.
-> It uses their public [developer API](https://developer.plugchoice.com/) with your own
-> personal access token.
+> **Unofficial.** This integration is not made or supported by Plugchoice /
+> [Volt Time](https://volttime.com/). It uses their public
+> [developer API](https://developer.plugchoice.com/) with your own personal access token.
+> Volt Time is fine with this integration for **personal (private) use**; for anything
+> else, contact them first. Their terms: [volttime.com/legal](https://volttime.com/legal/).
+>
+> The Plugchoice name and logo belong to Volt Time and are used with their permission.
 
 ## How it works
 

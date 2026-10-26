@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.2 – 2026-10-26
+
+- Plugchoice icon and logo (light and dark) in `brand/`, used with permission of
+  Volt Time, instead of the neutral plug icon.
+- README: Volt Time is fine with the integration for personal (private) use; link to
+  their terms.
+
 ## 0.3.1 – 2026-10-25
 
 - Integration icon: a neutral Type 2 charging plug in `brand/` (shown from Home
