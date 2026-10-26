@@ -1,11 +1,14 @@
 Plugchoice for Home Assistant
-Copyright (c) 2026 Brecht Debruyne
+Copyright (C) 2026 Brecht Debruyne
 
-The source code in this repository is licensed under the MIT License (see LICENSE).
+This program is free software: you can redistribute it and/or modify it under the
+terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later version.
+See LICENSE. Versions up to and including 0.3.2 were released under the MIT License.
 
 The Plugchoice name and the images in custom_components/plugchoice/brand/ are
-trademarks of Volt Time. They are not covered by the MIT License and are included
-with Volt Time's permission, only to show this integration in Home Assistant.
+trademarks of Volt Time. They are not covered by the GPL and are included with
+Volt Time's permission, only to show this integration in Home Assistant.
 
 This integration is unofficial. Volt Time is fine with it for personal (private) use.
 Their terms: https://volttime.com/legal/
