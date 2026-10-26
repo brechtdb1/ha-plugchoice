@@ -181,4 +181,8 @@ checks that writing is refused.
 
 ## License
 
-[MIT](LICENSE)
+The code is licensed under [MIT](LICENSE).
+
+The Plugchoice name and the images in `custom_components/plugchoice/brand/` are
+trademarks of Volt Time and are **not** covered by the MIT license. They are included
+with Volt Time's permission, only to show the integration in Home Assistant.
