@@ -10,7 +10,7 @@ API_BASE_URL = "https://app.plugchoice.com/api/v3"
 
 # The Cloudflare front of the API blocks the default User-Agents of HTTP libraries
 # (error 1010 "browser_signature_banned"), so always send our own.
-USER_AGENT = "HomeAssistant-Plugchoice/0.3 (+https://github.com/brechtdb1/ha-plugchoice)"
+USER_AGENT = "HomeAssistant-Plugchoice/0.4 (+https://github.com/brechtdb1/ha-plugchoice)"
 
 CONF_TOKEN = "token"
 CONF_CHARGER_UUID = "charger_uuid"

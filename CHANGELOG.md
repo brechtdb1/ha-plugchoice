@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.4.0 – 2026-10-26
+
+- License changed from MIT to the **GNU General Public License v3.0 or later**.
+  Versions up to 0.3.2 stay available under MIT.
+- `NOTICE` with the copyright, the license and the Volt Time trademark note.
+
 ## 0.3.2 – 2026-10-26
 
 - Plugchoice icon and logo (light and dark) in `brand/`, used with permission of

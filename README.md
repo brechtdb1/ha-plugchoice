@@ -181,8 +181,10 @@ checks that writing is refused.
 
 ## License
 
-The code is licensed under [MIT](LICENSE).
+The code is licensed under the [GNU General Public License v3.0 or later](LICENSE):
+you may use, change and share it, but modified versions you distribute must stay open
+source under the same license. Versions up to 0.3.2 were released under MIT.
 
 The Plugchoice name and the images in `custom_components/plugchoice/brand/` are
-trademarks of Volt Time and are **not** covered by the MIT license. They are included
+trademarks of Volt Time and are **not** covered by the GPL. They are included
 with Volt Time's permission, only to show the integration in Home Assistant.
