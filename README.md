@@ -1,4 +1,7 @@
-<img src="custom_components/plugchoice/brand/logo.png" alt="Plugchoice" height="64">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="custom_components/plugchoice/brand/dark_logo.png">
+  <img src="custom_components/plugchoice/brand/logo.png" alt="Plugchoice" height="64">
+</picture>
 
 # Plugchoice for Home Assistant
 
