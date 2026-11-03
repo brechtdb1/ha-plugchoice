@@ -49,9 +49,12 @@ diagnostics file.
 
 ### HACS (recommended)
 
-1. HACS → ⋮ → *Custom repositories* → add `https://github.com/brechtdb1/ha-plugchoice`,
-   category *Integration*.
-2. Install **Plugchoice** and restart Home Assistant.
+1. In HACS, search for **Plugchoice** and install it.
+2. Restart Home Assistant.
+
+If Plugchoice does not appear in the search results, add
+`https://github.com/brechtdb1/ha-plugchoice` via HACS → ⋮ → *Custom repositories*,
+select the *Integration* category, and install **Plugchoice**.
 
 ### Manual
 
